@@ -9,12 +9,13 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/coreos/dex/server"
-	"github.com/coreos/dex/storage"
-	"github.com/coreos/dex/storage/etcd"
-	"github.com/coreos/dex/storage/kubernetes"
-	"github.com/coreos/dex/storage/memory"
-	"github.com/coreos/dex/storage/sql"
+	"github.com/globbie/dex/server"
+	"github.com/globbie/dex/storage"
+	"github.com/globbie/dex/storage/etcd"
+	"github.com/globbie/dex/storage/kubernetes"
+	"github.com/globbie/dex/storage/memory"
+	"github.com/globbie/dex/storage/sql"
+	"github.com/globbie/dex/storage/knowdy"
 )
 
 // Config is the config format for the main application.
@@ -136,6 +137,7 @@ var storages = map[string]func() StorageConfig{
 	"memory":     func() StorageConfig { return new(memory.Config) },
 	"sqlite3":    func() StorageConfig { return new(sql.SQLite3) },
 	"postgres":   func() StorageConfig { return new(sql.Postgres) },
+	"knowdy":     func() StorageConfig { return new(knowdy.Knowdy) },
 }
 
 // UnmarshalJSON allows Storage to implement the unmarshaler interface to

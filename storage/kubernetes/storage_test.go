@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/coreos/dex/storage"
-	"github.com/coreos/dex/storage/conformance"
+	"github.com/globbie/dex/storage"
+	"github.com/globbie/dex/storage/conformance"
 	"github.com/sirupsen/logrus"
 )
 

@@ -22,17 +22,17 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/sirupsen/logrus"
 
-	"github.com/coreos/dex/connector"
-	"github.com/coreos/dex/connector/authproxy"
-	"github.com/coreos/dex/connector/github"
-	"github.com/coreos/dex/connector/gitlab"
-	"github.com/coreos/dex/connector/ldap"
-	"github.com/coreos/dex/connector/linkedin"
-	"github.com/coreos/dex/connector/microsoft"
-	"github.com/coreos/dex/connector/mock"
-	"github.com/coreos/dex/connector/oidc"
-	"github.com/coreos/dex/connector/saml"
-	"github.com/coreos/dex/storage"
+	"github.com/globbie/dex/connector"
+	"github.com/globbie/dex/connector/authproxy"
+	"github.com/globbie/dex/connector/github"
+	"github.com/globbie/dex/connector/gitlab"
+	"github.com/globbie/dex/connector/ldap"
+	"github.com/globbie/dex/connector/linkedin"
+	"github.com/globbie/dex/connector/microsoft"
+	"github.com/globbie/dex/connector/mock"
+	"github.com/globbie/dex/connector/oidc"
+	"github.com/globbie/dex/connector/saml"
+	"github.com/globbie/dex/storage"
 )
 
 // LocalConnector is the local passwordDB connector which is an internal

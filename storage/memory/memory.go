@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coreos/dex/storage"
+	"github.com/globbie/dex/storage"
 	"github.com/sirupsen/logrus"
 )
 

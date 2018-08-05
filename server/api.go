@@ -10,10 +10,10 @@ import (
 	// https://github.com/grpc/grpc-go/issues/711
 	"golang.org/x/net/context"
 
-	"github.com/coreos/dex/api"
-	"github.com/coreos/dex/server/internal"
-	"github.com/coreos/dex/storage"
-	"github.com/coreos/dex/version"
+	"github.com/globbie/dex/api"
+	"github.com/globbie/dex/server/internal"
+	"github.com/globbie/dex/storage"
+	"github.com/globbie/dex/version"
 	"github.com/sirupsen/logrus"
 )
 
